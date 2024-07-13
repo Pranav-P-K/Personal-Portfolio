@@ -3,6 +3,7 @@ import '../styles/Navbar.css';
 const Navbar = () => {
   return (
     <nav className="navbar">
+      <li className="navbar-links"><a href="#App">Portfolio</a></li>
       <ul className="navbar-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>

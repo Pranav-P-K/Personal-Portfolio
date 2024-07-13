@@ -4,6 +4,12 @@ const Contact = () => {
   return (
     <section id="contact" className="contact-section">
       <h2>Contact</h2>
+      <div>Mail ME ➡️</div>
+      <div>Reach ME ⬇️
+        <li></li>
+        <li></li>
+        <li></li>
+      </div>
       <form>
         <input type="text" placeholder="Name" />
         <input type="email" placeholder="Email" />
