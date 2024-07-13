@@ -1,0 +1,12 @@
+.projects-section {
+  padding: 2rem;
+}
+
+.project-item {
+  background-color: #222;
+  color: #fff;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 8px;
+  text-align: center;
+}

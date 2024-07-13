@@ -1,0 +1,30 @@
+.skills-section {
+  padding: 2rem;
+}
+
+.skills-tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.skills-tabs button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.skills-tabs button:hover {
+  color: #f39c12;
+}
+
+.skills-content {
+  display: none;
+}
+
+.skills-content.active {
+  display: block;
+}
