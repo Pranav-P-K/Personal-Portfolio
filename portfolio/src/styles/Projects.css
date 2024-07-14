@@ -2,11 +2,48 @@
   padding: 2rem;
 }
 
+.projects-section h2 {
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.projects-section p {
+  text-align: justify;
+}
+
 .project-item {
-  background-color: #222;
+  background-color: hsl(0, 0%, 15%);
   color: #fff;
   padding: 1rem;
   margin: 0.5rem;
   border-radius: 8px;
   text-align: center;
+}
+
+.project-item img {
+  width: 281px;
+  height: 194px;
+}
+
+.project-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-footer a {
+  background-color: hsl(34, 100%, 50%);
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.project-footer a:hover {
+  background-color: hsl(34, 100%, 40%);
+}
+
+button.react-multiple-carousel__arrow:hover {
+  background-color: hsl(0, 0%, 30%);
 }

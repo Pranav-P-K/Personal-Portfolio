@@ -4,14 +4,36 @@ import 'react-multi-carousel/lib/styles.css';
 
 const Projects = () => {
   const projects = [
-    { id: 1, title: 'Project 1', description: 'Description 1' },
-    { id: 2, title: 'Project 2', description: 'Description 2' },
-    { id: 3, title: 'Project 3', description: 'Description 3' },
-    { id: 4, title: 'Project 4', description: 'Description 4' },
-    { id: 5, title: 'Project 5', description: 'Description 5' },
-    { id: 6, title: 'Project 6', description: 'Description 6' },
-    { id: 7, title: 'Project 7', description: 'Description 7' },
-    // Add more projects as needed
+    { 
+      id: 1, 
+      title: 'Expense Tracker', 
+      img: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400/b2a8ac65608331.5afa862ca7e21.png', 
+      description: 'Users can create an account, log in, manage expenses and income, view charts, and update or remove financial details.', 
+      tech:'TECH: MERN Stack',
+      goto: 'https://github.com/Pranav-P-K?tab=repositories',
+    },
+    { 
+      id: 2, 
+      title: 'Login Page', 
+      img: 'https://cdn.dribbble.com/userupload/4609730/file/original-184f61e918c09816744483b9b4703a68.png?resize=400x0', 
+      description: 'Responsive Login & Registration Form Using HTML CSS & JavaScript with animations when changing forms.', 
+      tech:'TECH: HTML,CSS,JS',
+      goto: 'https://github.com/Pranav-P-K/Login-Page',
+    },
+    { id: 3, 
+      title: 'Scientific Calculator', 
+      img:'https://copyassignment.com/wp-content/uploads/2022/11/calc_res.jpg', 
+      description: 'This is a basic scientific calculator created in Java and Java Swing for making Graphical User Interface (GUI).', 
+      tech:'TECH: JAVA',
+      goto: 'https://github.com/Pranav-P-K/Scientific-Calculator',
+    },
+    { id: 4, 
+      title: 'Memory Game', 
+      img:'https://i.etsystatic.com/27759810/r/il/f178f4/3661501502/il_fullxfull.3661501502_3dzo.jpg', 
+      description: "An engaging card game designed to practice and enhance your brain's cognitive skills through fun and interactive challenges.", 
+      tech:'TECH: ReactJS,CSS3', 
+      goto: 'https://github.com/Pranav-P-K/Memory-Game',
+    },
   ];
 
   const responsive = {
@@ -28,7 +50,12 @@ const Projects = () => {
         {projects.map(project => (
           <div key={project.id} className="project-item">
             <h3>{project.title}</h3>
+            <img src={project.img}/>
             <p>{project.description}</p>
+            <div className='project-footer'>
+              <p>{project.tech}</p>
+              <a href={project.goto}>Code</a>
+            </div>
           </div>
         ))}
       </Carousel>
