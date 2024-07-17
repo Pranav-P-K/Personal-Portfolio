@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../styles/Skills.css';
+import '../index.css';
 
 const Skills = () => {
   const [active, setActive] = useState('languages');

@@ -1,4 +1,4 @@
-import '../styles/About.css';
+import '../index.css';
 import myImg from '../assets/dp-img.jpg';
 
 const About = () => {
