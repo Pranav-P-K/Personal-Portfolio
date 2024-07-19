@@ -28,3 +28,7 @@ main {
   margin: auto;
   padding: 1rem;
 }
+
+html {
+  scroll-behavior: smooth;
+}

@@ -116,7 +116,7 @@ h1, h2 {
   display: flex;
   justify-content: space-around;
   background-color: var(--secondary-bg-color);
-  padding: 1.1rem;
+  padding: 10px;
   border-radius: 5px 5px 0 0;
 }
 
@@ -144,11 +144,16 @@ h1, h2 {
   background-color: var(--light-bg-color);
   padding: 2rem;
   border-radius: 0 0 5px 5px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-auto-rows: 1fr;
+  place-items: center;
 }
 
 .skills-content.active img {
   height: 100px;
   width: 100px;
+  padding: 20px;
   animation-name: reveal;
   animation-duration: 0.5s;
   animation-iteration-count: 1;
@@ -324,5 +329,6 @@ button.react-multiple-carousel__arrow:hover {
     grid-template-columns: repeat(2,1fr);
     grid-auto-rows: 1fr;
     place-items: center;
+    padding: 10px;
   }
 }
