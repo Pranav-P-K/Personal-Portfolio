@@ -5,6 +5,9 @@ const About = () => {
   return (
     <section id="about" className="about-section">
       <div className="about-content">
+      <div className="about-image">
+          <img src={myImg} alt="About" />
+        </div>
         <div className="about-text">
           <h2>About Me</h2>
           <p>🎓 I am a motivated B.Tech. student in Electronics and Computer Engineering
@@ -15,9 +18,6 @@ const About = () => {
              ⚡ I am eager to start my career, apply my skills to real-world challenges, 
              and continually learn and develop professionally. Connect with me if you share 
              similar interests or have opportunities where I can contribute.</p>
-        </div>
-        <div className="about-image">
-          <img src={myImg} alt="About" />
         </div>
       </div>
     </section>

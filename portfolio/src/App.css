@@ -32,3 +32,10 @@ main {
 html {
   scroll-behavior: smooth;
 }
+
+@media (max-width: 768px) {
+  .App {
+    max-width: 768px;
+    width: max-content;
+  };
+}
