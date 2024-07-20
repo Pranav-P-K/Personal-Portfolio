@@ -1,6 +1,19 @@
+import { useState } from 'react';
 import '../index.css';
 
 const Contact = () => {
+  const [form, setForm] = useState({ name: '', email: '', message: '' });
+
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    alert("Your response has been successfully submitted");
+    setForm({ name: '', email: '', message: '' });
+  };
+
   return (
     <section id="contact" className="contact-section">
       <h2>Contact Me</h2>
@@ -15,10 +28,30 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <form>
-          <input type="text" placeholder="Name" required />
-          <input type="email" placeholder="Email" required />
-          <textarea placeholder="Message" required></textarea>
+        <form onSubmit={sendEmail}>
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            value={form.name}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            value={form.email}
+            onChange={handleChange}
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Message"
+            value={form.message}
+            onChange={handleChange}
+            required
+          ></textarea>
           <button type="submit">Send</button>
         </form>
       </div>
