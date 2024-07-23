@@ -1,8 +1,13 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import emailjs from '@emailjs/browser';
 import '../index.css';
 
 const Contact = () => {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
+
+  useEffect(() => {
+    emailjs.init('1FheU-bODqCS2nFID');
+  }, []);
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -10,8 +15,17 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    alert("Your response has been successfully submitted");
-    setForm({ name: '', email: '', message: '' });
+    var params = {
+      name: form.name,
+      email: form.email,
+      message: form.message,
+    }
+    const serviceId = "service_129hdl9";
+    const templateId = "template_b9sl0ne";
+    emailjs.send(serviceId, templateId, params).then( () => {
+      alert("Your response has been successfully submitted");
+      setForm({ name: '', email: '', message: '' });
+    });
   };
 
   return (

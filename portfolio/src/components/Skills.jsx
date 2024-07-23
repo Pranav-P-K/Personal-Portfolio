@@ -22,13 +22,16 @@ const Skills = () => {
           <img src="https://img.icons8.com/color/500/html-5--v1.png" alt="html5" />
           <img src="https://img.icons8.com/color/500/css3.png" alt="css3" />
           <img src="https://img.icons8.com/color/500/javascript--v1.png" alt="javascript" />
-          <img src="https://img.icons8.com/bubbles/50/react.png" alt="react-js" />
+          <img src="https://img.icons8.com/office/500/react.png" alt="react-js"/>
+          <img src="https://img.icons8.com/fluency/500/tailwind_css.png" alt="tailwind-css"/>
+          <img src="https://img.icons8.com/color/500/nextjs.png" alt="next-js"/>
         </div>
         <div className={`skills-content ${active === 'backend' ? 'active' : ''}`}>
           <img src="https://img.icons8.com/fluency/500/node-js.png" alt="node-js" />
           <img src="https://img.icons8.com/fluency/500/express-js.png" alt="express-js" />
           <img src="https://img.icons8.com/color/500/mongodb.png" alt="mongodb" />
           <img src="https://img.icons8.com/color/500/mysql-logo.png" alt="mysql" />
+          <img src="https://img.icons8.com/color/500/google-firebase-console.png" alt="firebase"/>
         </div>
     </section>
   );
