@@ -17,14 +17,20 @@ const Skills = () => {
           <img src="https://img.icons8.com/color/500/java-coffee-cup-logo--v1.png" alt="java" />
           <img src="https://img.icons8.com/color/500/c-programming.png" alt="c" />
           <img src="https://img.icons8.com/color/500/c-plus-plus-logo.png" alt="c++" />
+          <img src="https://img.icons8.com/color/500/dart.png" alt="dart" />
         </div>
         <div className={`skills-content ${active === 'frontend' ? 'active' : ''}`}>
           <img src="https://img.icons8.com/color/500/html-5--v1.png" alt="html5" />
           <img src="https://img.icons8.com/color/500/css3.png" alt="css3" />
           <img src="https://img.icons8.com/color/500/javascript--v1.png" alt="javascript" />
+          <img src="https://img.icons8.com/color/500/typescript.png" alt="typescript" />
           <img src="https://img.icons8.com/office/500/react.png" alt="react-js"/>
-          <img src="https://img.icons8.com/fluency/500/tailwind_css.png" alt="tailwind-css"/>
           <img src="https://img.icons8.com/color/500/nextjs.png" alt="next-js"/>
+          <img src="https://img.icons8.com/color/500/redux.png" alt="redux"/>
+          <img src="https://img.icons8.com/fluency/500/tailwind_css.png" alt="tailwind-css"/>
+          <img src="https://img.icons8.com/color/500/bootstrap--v2.png" alt="bootstrap"/>
+          <img src="https://img.icons8.com/color/500/sass.png" alt="SASS"/>
+
         </div>
         <div className={`skills-content ${active === 'backend' ? 'active' : ''}`}>
           <img src="https://img.icons8.com/fluency/500/node-js.png" alt="node-js" />

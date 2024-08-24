@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
 
 .self {
-  padding-top: 1rem;
+  padding-top: 3rem;
   margin-bottom: 0;
-  font-size: 6rem;
+  font-size: 8rem;
 }
 
 .description {
   padding-bottom: 2rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .App {
@@ -24,7 +24,7 @@ video {
 }
 
 main {
-  max-width: 1200px;
+  max-width: 1920px;
   margin: auto;
   padding: 1rem;
 }
