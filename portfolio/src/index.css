@@ -159,6 +159,28 @@ h1, h2 {
   animation-iteration-count: 1;
 }
 
+.skill-item {
+  text-align: center;
+}
+
+.skill-item img {
+  width: 100px; 
+  height: auto;
+}
+
+.skill-item p {
+  color: #000;
+  margin-top: 5px;
+  font-size: 1.2rem;
+}
+
+.skill-item:hover {
+  background-color: hsl(0, 0%, 75%);
+  border-radius: 10px;
+  transition: color 0.3s ease;
+}
+
+
 @keyframes reveal {
   0% {opacity: 0; transform: scale(0,0);}
   20% {opacity: 0.5; transform: scale(0.2,0.2);}
