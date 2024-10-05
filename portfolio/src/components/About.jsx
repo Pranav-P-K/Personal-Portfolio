@@ -1,23 +1,27 @@
 import '../index.css';
 import myImg from '../assets/dp-img.jpg';
+import Draggable from 'react-draggable';
 
 const About = () => {
   return (
     <section id="about" className="about-section">
       <div className="about-content">
-      <div className="about-image">
+      <Draggable>
+        <div className="about-image">
           <img src={myImg} alt="About" />
         </div>
+      </Draggable>
+        
         <div className="about-text">
           <h2>About Me</h2>
-          <p>🎓 I am a motivated B.Tech. student in Electronics and Computer Engineering
-             at VIT Chennai, with a solid foundation in both hardware and software.<br/>
-             🛠️ Proficient in Python, Java, and experienced in frontend and backend technologies, 
-             I have worked on various projects, including MERN stack web applications, enhancing my 
-             full-stack development skills. I am currently exploring DevOps with enthusiasm.<br/>
-             ⚡ I am eager to start my career, apply my skills to real-world challenges, 
-             and continually learn and develop professionally. Connect with me if you share 
-             similar interests or have opportunities where I can contribute.</p>
+          <p>🎓 Hi, I am a B.Tech. student in Electronics and Computer Engineering at VIT Chennai.
+            I enjoy working with both hardware and software, and I have experience in Python,
+            Java, and full-stack development, especially using the MERN stack.<br/>
+            🛠️ Recently, I have started exploring Flutter, and I am excited to dive deeper into 
+            it. I am always looking for new opportunities to apply what I have learned, solve
+            real-world problems, and grow professionally.<br/>
+            ⚡ Feel free to connect with me if you share similar interests or know of 
+            opportunities where I can contribute!</p>
         </div>
       </div>
     </section>

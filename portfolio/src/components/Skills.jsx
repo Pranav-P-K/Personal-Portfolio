@@ -98,6 +98,10 @@ const Skills = () => {
           <img src="https://img.icons8.com/color/500/mysql-logo.png" alt="mysql" />
           <p>MySQL</p>
         </div>
+        <div className="skill-item">
+          <img src="https://img.icons8.com/color/500/firebase.png" alt="firebase"/>
+          <p>Firebase</p>
+        </div>
       </div>
       <div className={`skills-content ${active === 'softwares' ? 'active' : ''}`}>
         <div className="skill-item">
