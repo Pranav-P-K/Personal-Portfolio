@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import '../index.css';
+import resume from '../assets/Resume.pdf';
 
 const Contact = () => {
   const [form, setForm] = useState({ name: '', email: '', message: '', rating: 0 });
 
   useEffect(() => {
-    emailjs.init('1FheU-bODqCS2nFID');
+    emailjs.init('q81MWoGlRjpRST9eK');
   }, []);
 
   const handleChange = (e) => {
@@ -25,8 +26,8 @@ const Contact = () => {
       message: [form.message, form.rating]
     };
 
-    const serviceId = "service_129hdl9";
-    const templateId = "template_b9sl0ne";
+    const serviceId = "service_vh016fz";
+    const templateId = "template_134dg6f";
     emailjs.send(serviceId, templateId, params).then(() => {
       alert("Thanks for submitting a response");
       setForm({ name: '', email: '', message: '', rating: 0 });
@@ -38,12 +39,14 @@ const Contact = () => {
       <h2>Contact Me</h2>
       <div className="contact-content">
         <div className="sidebar">
-          <div className="mail"><h1>Contact ME ➡️</h1></div>
+          <div className='mail'>
+            <a href={resume}><button>Download CV📩</button></a>
+          </div>
           <div className="reach">
             <h1>Reach ME ⬇️</h1>
             <div className="reach-footer">
-              <a href="https://www.linkedin.com/in/pranavpk6/"><img src="https://img.icons8.com/bubbles/500/linkedin.png" alt="linkedin" /></a>
-              <a href="https://github.com/Pranav-P-K"><img src="https://img.icons8.com/bubbles/500/github.png" alt="github" /></a>
+              <a href="https://www.linkedin.com/in/dheerajdrse7en/"><img src="https://img.icons8.com/bubbles/500/linkedin.png" alt="linkedin" /></a>
+              <a href="https://github.com/dheerajdrse7en"><img src="https://img.icons8.com/bubbles/500/github.png" alt="github" /></a>
             </div>
           </div>
         </div>

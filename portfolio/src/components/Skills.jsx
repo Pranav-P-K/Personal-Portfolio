@@ -11,7 +11,7 @@ const Skills = () => {
         <button onClick={() => setActive('languages')}>LANGUAGES</button>
         <button onClick={() => setActive('frontend')}>FRONTEND</button>
         <button onClick={() => setActive('backend')}>BACKEND</button>
-        <button onClick={() => setActive('softwares')}>SOFTWARES</button>
+        <button onClick={() => setActive('tools')}>TOOLS</button>
       </div>
       <div className={`skills-content ${active === 'languages' ? 'active' : ''}`}>
         <div className="skill-item">
@@ -61,16 +61,24 @@ const Skills = () => {
           <p>ReactJS</p>
         </div>
         <div className="skill-item">
+          <img src="https://img.icons8.com/nolan/500/react-native.png" alt="react-native"/>
+          <p>React Native</p>
+        </div>
+        <div className="skill-item">
           <img src="https://img.icons8.com/color/500/nextjs.png" alt="next-js"/>
           <p>NextJS</p>
         </div>
         <div className="skill-item">
-          <img src="https://img.icons8.com/color/500/redux.png" alt="redux"/>
-          <p>Redux</p>
-        </div>
-        <div className="skill-item">
           <img src="https://img.icons8.com/fluency/500/tailwind_css.png" alt="tailwind-css"/>
           <p>Tailwind CSS</p>
+        </div>
+        <div className="skill-item">
+          <img src="https://img.icons8.com/doodle/500/svetle.png" alt="svelte"/>
+          <p>Svelte</p>
+        </div>
+        <div className="skill-item">
+          <img src="https://img.icons8.com/color/500/redux.png" alt="redux"/>
+          <p>Redux</p>
         </div>
         <div className="skill-item">
           <img src="https://img.icons8.com/color/500/bootstrap--v2.png" alt="bootstrap"/>
@@ -91,7 +99,7 @@ const Skills = () => {
           <p>ExpressJS</p>
         </div>
         <div className="skill-item">
-          <img src="https://img.icons8.com/color/500/mongodb.png" alt="mongodb" />
+          <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/500/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png" alt="mongodb"/>
           <p>MongoDB</p>
         </div>
         <div className="skill-item">
@@ -99,13 +107,21 @@ const Skills = () => {
           <p>MySQL</p>
         </div>
         <div className="skill-item">
+          <img src="https://img.icons8.com/color/500/postgreesql.png" alt="postgresql" />
+          <p>PostgreSQL</p>
+        </div>
+        <div className="skill-item">
           <img src="https://img.icons8.com/color/500/firebase.png" alt="firebase"/>
           <p>Firebase</p>
         </div>
-      </div>
-      <div className={`skills-content ${active === 'softwares' ? 'active' : ''}`}>
         <div className="skill-item">
-          <img src="https://img.icons8.com/color/500/visual-studio-code-2019.png" alt="vs-code" />
+          <img src="https://img.icons8.com/color/500/solidity.png" alt="solidity"/>
+          <p>Solidity</p>
+        </div>
+      </div>
+      <div className={`skills-content ${active === 'tools' ? 'active' : ''}`}>
+        <div className="skill-item">
+          <img src="https://img.icons8.com/color/500/visual-studio-code-2019.png" alt="vs-code"/>
           <p>VS Code</p>
         </div>
         <div className="skill-item">
@@ -113,16 +129,20 @@ const Skills = () => {
           <p>Git</p>
         </div>
         <div className="skill-item">
-          <img src="https://img.icons8.com/deco/500/unity.png" alt="unity" />
+          <img src="https://img.icons8.com/ios-filled/500/unity.png" alt="unity" />
           <p>Unity</p>
         </div>
         <div className="skill-item">
-          <img src="https://img.icons8.com/fluency/500/jupyter.png" alt="jupyter" />
-          <p>Jupyter</p>
+          <img width="24" height="24" src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/500/external-kaggle-an-online-community-of-data-scientists-and-machine-learners-owned-by-google-logo-shadow-tal-revivo.png" alt="kaggle"/>
+          <p>Kaggle</p>
         </div>
         <div className="skill-item">
-          <img src="https://img.icons8.com/color/48/flutter.png" alt="flutter" />
+          <img src="https://img.icons8.com/color/500/flutter.png" alt="flutter" />
           <p>Flutter</p>
+        </div>
+        <div className="skill-item">
+          <img src="https://img.icons8.com/fluency/500/docker.png" alt="docker" />
+          <p>Docker</p>
         </div>
       </div>
     </section>
