@@ -1,20 +1,29 @@
 import '../index.css';
 import myImg from '../assets/dp-img.jpg';
-import Draggable from 'react-draggable';
+import { motion } from 'framer-motion';
 
 const About = () => {
   return (
     <section id="about" className="about-section">
       <div className="about-content">
-      <Draggable>
-        <div className="about-image">
+        <motion.div 
+          className="about-image"
+          drag
+          dragConstraints={{ left: -100, right: 100, top: -100, bottom: 100 }}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ cursor: 'grabbing' }}
+          style={{ cursor: 'grab' }}
+        >
           <img src={myImg} alt="About" />
-        </div>
-      </Draggable>
-        
+          <p style={{ textAlign: 'center', marginTop: '0.5rem', fontWeight: 'bold' }}>
+            Drag Me
+          </p>
+        </motion.div>
+
         <div className="about-text">
           <h2>About Me</h2>
-          <p>🎓 Hi, I am a B.Tech. student in Electronics and Computer Engineering 
+          <p>
+            🎓 Hi, I am a B.Tech. student in Electronics and Computer Engineering 
             at VIT Chennai, with a strong interest in full-stack development, 
             AI, and blockchain technologies.<br/>
             🛠️ I have built and contributed to projects ranging from real-time chat apps 

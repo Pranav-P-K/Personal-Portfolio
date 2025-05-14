@@ -73,6 +73,10 @@ const Skills = () => {
           <p>Tailwind CSS</p>
         </div>
         <div className="skill-item">
+          <img src="https://canada1.discourse-cdn.com/flex035/uploads/threejs/optimized/2X/e/e4f86d2200d2d35c30f7b1494e96b9595ebc2751_2_744x750.png" alt="three-js"/>
+          <p>ThreeJS</p>
+        </div>
+        <div className="skill-item">
           <img src="https://img.icons8.com/doodle/500/svetle.png" alt="svelte"/>
           <p>Svelte</p>
         </div>
